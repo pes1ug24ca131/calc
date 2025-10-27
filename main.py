@@ -11,6 +11,9 @@ def mul(n1, n2):
 
 
 def div(n1, n2):
+    if n2 == 0:
+        print("Cant be 0")
+        return
     return n1 / n2
 
 
