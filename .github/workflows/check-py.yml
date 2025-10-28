@@ -1,0 +1,14 @@
+name: check-py
+on: [push]
+jobs:
+  runPython:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Access-Repo
+        uses: actions/checkout@v4
+
+      - name: Set-up-Python
+        uses: actions/setup-python@v6.0.0
+
+      - name: Run-Python-Check
+        run: python *.py
